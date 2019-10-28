@@ -1,0 +1,20 @@
+<form action="/new" method="POST">
+    <input type="text" name="idExterno"></input>  
+    <input type="submit"></input>
+  </form>
+
+
+<UL id="Carga">
+  <table border="1">
+  
+  {% for item in items %}
+    <tr>
+        <td> {{ item.idExterno }} </td>
+        <td>  {{ item.id }} </td>
+        <td>  {{ item.name }} </td>
+        <td>  {{ item.price }}</td>
+        <td>  {{ item.data }} </td>
+    </tr>
+  {% endfor %}
+  </table>
+</UL>
